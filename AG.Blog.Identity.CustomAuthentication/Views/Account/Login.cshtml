@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model AG.Blog.Identity.CustomAuthentication.Models.LoginVM
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <div> 
+        <form action="@Url.Action("Login","Account")" method="post">
+            
+            @Html.EditorForModel()
+            
+            <input type="submit" value="Giriş" />
+
+        </form>
+    </div>
+</body>
+</html>

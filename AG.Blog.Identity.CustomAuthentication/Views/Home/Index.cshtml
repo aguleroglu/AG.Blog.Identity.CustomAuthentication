@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h3>Güvenli alan.</h3>
+        @*Bu kısımda login olmuş kişinin Name bilgisini ekrana bastırıyoruz.*@
+        @User.Identity.Name
+        @Html.ActionLink("Çıkış","Logout","Account")
+    </div>
+</body>
+</html>
